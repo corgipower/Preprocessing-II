@@ -1,21 +1,37 @@
 .home {
 
+  .header-image {
+    img {
+      border-top: 2px dashed @navigation-border;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @phone {
+      flex-direction: column;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+        @media @phone {
+          width: 100%;
+          padding-left: 0;
+        }
 
       img {
         border-radius: 10px;
@@ -26,6 +42,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +60,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +74,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width: 80%;
+        margin: 0 auto 30px auto;
+      }
+
+      .btn {
+        .buttons(80%, 2.5rem, 4%, white);
+        @media @phone {
+          .buttons(100%, 2.5rem, 4%, white);
+        }
+      }
     }
   }
 }// home
