@@ -168,15 +168,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.btn {
-  width: 80%;
-  background-color: deepskyblue;
-  font-size: 2.5rem;
-  padding: 4%;
-  text-align: center;
-  color: white;
-  border-radius: 15px;
-}
 header {
   max-width: 800px;
   width: 100%;
@@ -252,7 +243,7 @@ header .header-image {
 }
 .home .content-pick .destination .btn {
   width: 80%;
-  background-color: deepskyblue;
+  background-color: #17A2B8;
   font-size: 2.5rem;
   padding: 4%;
   text-align: center;
