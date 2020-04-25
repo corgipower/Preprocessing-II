@@ -168,14 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 header {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 2%;
+  padding: 2% 0 2% 0;
+}
+@media (max-width: 500px) {
+  header {
+    width: 90%;
+  }
 }
 header h1 {
   display: inline;
+}
+@media (max-width: 500px) {
+  header h1 {
+    display: block;
+    text-align: center;
+  }
 }
 header nav {
   display: flex;
@@ -184,16 +197,20 @@ header nav {
   width: 50%;
   float: right;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 header nav a {
   margin: 2%;
   font-size: 2rem;
   color: black;
   text-decoration: none;
 }
-header .header-image {
-  display: block;
+.home .header-image img {
   border-top: 2px dashed #C0C0C0;
-  margin-top: 3%;
 }
 .home .content-section {
   margin: 30px 0;
